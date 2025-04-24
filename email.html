@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Email Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #4A90E2;
+      color: white;
+      padding: 15px 20px;
+      font-size: 1.5rem;
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
+    aside {
+      width: 200px;
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+    }
+
+    aside ul {
+      list-style: none;
+    }
+
+    aside ul li {
+      padding: 10px 0;
+      cursor: pointer;
+    }
+
+    aside ul li:hover {
+      background-color: #ddd;
+    }
+
+    .main {
+      flex: 1;
+      display: flex;
+    }
+
+    .email-list {
+      width: 40%;
+      border-right: 1px solid #ddd;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .email {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    .email:hover {
+      background-color: #f1f1f1;
+    }
+
+    .email-preview {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .email-preview h2 {
+      margin-bottom: 10px;
+    }
+
+    .email-preview p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Welcome, User!
+  </header>
+
+  <div class="container">
+    <aside>
+      <ul>
+        <li>Inbox</li>
+        <li>Sent</li>
+        <li>Drafts</li>
+        <li>Trash</li>
+      </ul>
+    </aside>
+
+    <div class="main">
+      <div class="email-list">
+        <div class="email">
+          <strong>Subject:</strong> Welcome to Your Inbox<br>
+          <small>From: team@example.com</small>
+        </div>
+        <div class="email">
+          <strong>Subject:</strong> Meeting Reminder<br>
+          <small>From: hr@example.com</small>
+        </div>
+      </div>
+
+      <div class="email-preview">
+        <h2>Welcome to Your Inbox</h2>
+        <p>This is where you can read the full content of your emails. You can design it further for dynamic data.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
